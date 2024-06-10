@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator Assignment | T3ch_Hefty</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <h1>BMI Calculator</h1>
+      <div class="top-box">
+        <img src="assets/img/topBoxLogo.png" alt="logo" />
+        <p>Modify values and click Calculate to use</p>
+      </div>
+
+      <div class="button-groups">
+        <button class="btn" id="us-metric-btn" onclick="usMetricTab()">
+          US Units
+        </button>
+        <button class="btn" id="metric-units-btn" onclick="MetricTab()">
+          Metric Units
+        </button>
+        <button class="btn">Other Units</button>
+      </div>
+      <!-- the calculator Forms -->
+
+      <div class="container" id="us-units-section">
+        <form action="">
+          <label for="age-input">Age </label>
+          <input type="text" id="age-input" value="25" /> ages 2 - 120 <br />
+
+          <label for="gender-radio"> Gender</label>
+          <input type="radio" name="radio" id="gender-radio" /> Male
+          <input type="radio" name="radio" id="gender-radio" /> Female <br />
+
+          <!-- container for height Input -->
+          <label for="height-input">Height</label>
+          <div class="height-input-wtrapper">
+            <div class="height-input" id="h-input-div">
+              <input
+                type="text"
+                name=""
+                id="height-input-USmETRIC"
+                value="5"
+              /><span class="spanUsmetricUnit">feet</span><br />
+            </div>
+
+            <div class="height-input" id="h-input-div">
+              <input
+                type="text"
+                name=""
+                id="height-input-USmETRIC"
+                value="25"
+              /><span class="spanUsmetricUnit">inches</span><br />
+            </div>
+          </div>
+
+          <br />
+
+          <!-- container for weight -->
+          <label for="weight-input"> Weight</label>
+          <div class="Weight-input">
+            <input type="text" name="" id="weight-input" value="160" /><span
+              class="spanUsmetricUnit"
+              >pounds</span
+            >
+            <br />
+          </div>
+
+          <div class="operation-buttons">
+            <div class="calculate-button-and-image">
+              Calculate
+              <img src="assets/img/calculate-logo.png" alt="img_here" />
+            </div>
+
+            <div id="clear-btn" class="">Clear</div>
+          </div>
+        </form>
+        <!-- End the calculator Forms -->
+      </div>
+
+      <div class="container" id="metric-units-section">
+        <form action="">
+          <label for="age-input">Age </label>
+          <input type="text" id="age-input" value="25" /> ages 2 - 120 <br />
+
+          <label for="gender-radio"> Gender</label>
+          <input type="radio" name="radio" id="gender-radio" /> Male
+          <input type="radio" name="radio" id="gender-radio" /> Female <br />
+
+          <!-- container for height Input -->
+          <label for="height-input">Height</label>
+          <div class="height-input">
+            <input type="text" name="" id="height-input" value="25" /><span
+              >cm</span
+            ><br />
+          </div>
+          <br />
+
+          <!-- container for weight -->
+          <label for="weight-input"> Weight</label>
+          <div class="Weight-input">
+            <input type="text" name="" id="weight-input" value="34" /><span
+              >kg</span
+            >
+            <br />
+          </div>
+
+          <div class="operation-buttons">
+            <div class="calculate-button-and-image">
+              Calculate
+              <img src="assets/img/calculate-logo.png" alt="img_here" />
+            </div>
+
+            <div id="clear-btn" class="">Clear</div>
+          </div>
+        </form>
+        <!-- End the calculator Forms -->
+      </div>
+    </main>
+  </body>
+</html>
